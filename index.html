@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password-manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SecureKeyChain</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        We're here to keep your online life secure and hassle-free. Your trust
+        in us is our top priority. Feel free to manage your passwords with
+        confidence, knowing that your digital world is in safe hands.
+      </p>
+      <br />
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table></table>
+      <br />
+
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <br /><br />
+
+        <!-- Submit button -->
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- Include CryptoJS from a CDN (Example) -->
+  
+    <script src="index.js"></script>
+  </body>
+</html>
